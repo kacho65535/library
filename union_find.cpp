@@ -5,7 +5,7 @@ union_find木で出来ること
 ※グループの分割が出来ないことに注意！
 計算量O(α(N))
 */
-struct union_find()
+struct union_find
 {
     vec par; //par[i]:iの親の番号　
     vec rank;
