@@ -1,7 +1,6 @@
 # ライブラリ置き場
 蟻本などに載っているアルゴリズム等を自分用に編集したものを置きます
-### インクルードファイル一覧
-[include_file](https://github.com/kacho65535/library/blob/master/include_file.cpp)
+[インクルードファイル一覧](https://github.com/kacho65535/library/blob/master/include_file.cpp)
 ### グラフアルゴリズム
 [ダイクストラ法(dijkstra)](https://github.com/kacho65535/library/blob/master/dijkstra.cpp)
 
