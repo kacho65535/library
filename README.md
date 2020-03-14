@@ -12,3 +12,5 @@
 [Union-Find法](https://github.com/kacho65535/library/blob/master/union_find.cpp)
 ### おまけ
 [インクルードファイル一覧](https://github.com/kacho65535/library/blob/master/include_file.cpp)
+
+[テンプレート](https://github.com/kacho65535/library/blob/master/template.cpp)
