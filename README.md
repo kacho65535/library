@@ -10,5 +10,5 @@
 [深さ優先探索/幅優先探索(dfs/bfs)](https://github.com/kacho65535/library/blob/master/dfs%2Cbfs.cpp)
 ### データ構造
 [union-find法](https://github.com/kacho65535/library/blob/master/union_find.cpp)
-###　おまけ
+### おまけ
 [インクルードファイル一覧](https://github.com/kacho65535/library/blob/master/include_file.cpp)
