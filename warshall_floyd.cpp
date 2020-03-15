@@ -1,11 +1,11 @@
 /*
 全頂点対最短距離を求める
-※必ずwatshall_floyd_init(V, dist);を記述した後入力を受け取らないとバグります...
+※必ずwarshall_floyd_init(V, dist);を記述した後入力を受け取らないとバグります...
 dist[i][i]<0なら負閉路あり
 dist[i][j]==1e18ならi->jの経路を持たない
 計算量O(V^3)
 */
-void watshall_floyd_init(long long V, vector<vector<long long>> &dist)
+void warshall_floyd_init(long long V, vector<vector<long long>> &dist)
 {
     //初期化
     for (long long i = 0; i < V; i++)
@@ -40,7 +40,7 @@ int main()
     cin >> V >> E;
     vector<vector<long long>> dist(V);
     //以下必須!
-    watshall_floyd_init(V, dist);
+    warshall_floyd_init(V, dist);
     //入力受け取り
     for (long long i = 0; i < E; i++)
     {
