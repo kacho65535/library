@@ -13,6 +13,6 @@
 ### データ構造
 [★Union-Find法](https://github.com/kacho65535/library/blob/master/union_find.cpp)
 ### おまけ
-[(c/c++)インクルードファイル一覧](https://github.com/kacho65535/library/blob/master/include_file.cpp)
+[インクルードファイル一覧(c/c++)](https://github.com/kacho65535/library/blob/master/include_file.cpp)
 
 [テンプレート(★の付いてないアルゴリズムを動かすのに要る)](https://github.com/kacho65535/library/blob/master/template.cpp)
