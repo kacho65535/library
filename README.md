@@ -15,4 +15,4 @@
 ### おまけ
 [インクルードファイル一覧](https://github.com/kacho65535/library/blob/master/include_file.cpp)
 
-[テンプレート](https://github.com/kacho65535/library/blob/master/template.cpp)
+[テンプレート(★の付いてないアルゴリズムを動かすのに要る)](https://github.com/kacho65535/library/blob/master/template.cpp)
