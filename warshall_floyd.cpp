@@ -1,29 +1,47 @@
-ll V;
-vector<vector<ll>> dist;
-void warshall_floyd()
+/*
+全頂点対最短距離を求める
+dist[i][i]<0なら負閉路あり
+dist[i][j]==1e18ならi->jの経路を持たない
+計算量O(V^3)
+*/
+void warshall_floyd(long long V, vector<vector<long long>> &dist)
 {
-    loop(k, V) loop(i, V) loop(j, V) if (dist[i][k] != 1e18 && dist[k][j] != 1e18) dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
-}
-//Main関数
-ll E;
-cin >> V >> E;
-dist.resize(V);
-loop(i, V)
-{
-    loop(j, V)
+    for (long long k = 0; k < V; k++)
     {
-        if (i == j)
-            dist[i].push_back(0);
-        else
-            dist[i].push_back(1e18);
+        for (long long i = 0; i < V; i++)
+        {
+            for (long long j = 0; j < V; j++)
+            {
+                if (dist[i][k] != 1e18 && dist[k][j] != 1e18)
+                    dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
+            }
+        }
     }
 }
-loop(i, E)
+//以下Main関数における例
+int main()
 {
-    ll s, t, d;
-    cin >> s >> t >> d;
-    dist[s][t] = d; //配列外参照に注意
+    long long V, E; //V:頂点数,E:辺数
+    cin >> V >> E;
+    vector<vector<long long>> dist(V);
+    //初期化
+    for (long long i = 0; i < V; i++)
+    {
+        for (long long j = 0; j < V; j++)
+        {
+            if (i == j)
+                dist[i].push_back(0);
+            else
+                dist[i].push_back(1e18);
+        }
+    }
+    //入力受け取り
+    for (long long i = 0; i < E; i++)
+    {
+        long long s, t, d; //例)頂点sから頂点tへのコストdの有向辺を張る
+        cin >> s >> t >> d;
+        dist[s][t] = d; //配列外参照,無向,有向に注意
+    }
+    warshall_floyd(V, dist);
+    return 0;
 }
-warshall_floyd();
-//dist[i][i]<0なら負閉路あり
-//dist[i][j]==1e18ならi->jは非連結
