@@ -3,7 +3,7 @@
 
 修正して使いやすくしたコードには★マークを付けています(というより他は多分使い辛過ぎる...)
 ### グラフアルゴリズム
-[ダイクストラ法(Dijkstra)](https://github.com/kacho65535/library/blob/master/dijkstra.cpp)
+[★ダイクストラ法(Dijkstra)](https://github.com/kacho65535/library/blob/master/dijkstra.cpp)
 
 [ベルマンフォード法(Bellman-Ford)](https://github.com/kacho65535/library/blob/master/bellman_ford.cpp)
 
